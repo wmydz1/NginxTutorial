@@ -20,6 +20,21 @@ with-mail_ssl_module --with-ipv6
 
 ```
 
+```
+./configure \
+--sbin-path=/usr/local/nginx/nginx \
+--conf-path=/usr/local/nginx/nginx.conf \
+--pid-path=/usr/local/nginx/nginx.pid \
+--with-http_ssl_module \
+--with-pcre=/usr/local/src/pcre-8.38 \
+--with-zlib=/usr/local/src/zlib-1.2.8 \
+--add-module=/home/ubuntu/google/ngx_http_google_filter_module \
+--add-module=/home/ubuntu/google/ngx_http_substitutions_filter_module
+
+
+
+```
+
 - 1、 Tar:解压这个源码软件包。- 2、 Cd:进入到这个源码包。- 3、 ./configure:“configure”会在你的系统上测试存在的特性(或者bug!)然后来建立  
  Makefile文件来完成make!  - 4、 Make:编译程序。5、 Make install:安装文件!
 ----
